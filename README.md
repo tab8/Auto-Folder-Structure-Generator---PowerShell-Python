@@ -2,7 +2,9 @@
 A cross-platform Python utility that audits user-profile directories and automatically provisions a standardised 8-folder structure, without ever overwriting existing data.
 
 
-📌 Overview
+📌 **Overview**
+
+
 Managing consistent folder structures across multiple user profiles is a common sysadmin challenge. This project started life as a Windows PowerShell script and has been rewritten in pure Python to run on Windows, macOS, and Linux with zero external dependencies.
 The script walks every user folder inside a configurable base directory, checks for 8 required sub-folders, creates any that are missing, and—for two specific folders—also provisions four nested sub-folders each.
 
