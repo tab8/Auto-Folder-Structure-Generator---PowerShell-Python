@@ -34,11 +34,11 @@ The script walks every user folder inside a configurable base directory, checks 
 
 
 ⚙️ **How It Works**
-1. Logging — a timestamped `.log` file is created at startup (mirrors PowerShell's `Start-Transcript`).
-2. Discovery — the script scans the base directory for immediate child directories (user profile folders).
-3. Audit & Create — for every user folder, each of the 8 required folders is checked; missing ones are created with `os.makedirs(exist_ok=True)` so existing data is never touched.
-4. Nested folders — `Examination` and `Health and Safety` each receive 4 sub-folders automatically.
-5. Log closure — a final log entry marks the end of the run.
+1. Logging - a timestamped `.log` file is created at startup (mirrors PowerShell's `Start-Transcript`).
+2. Discovery - the script scans the base directory for immediate child directories (user profile folders).
+3. Audit & Create - for every user folder, each of the 8 required folders is checked; missing ones are created with `os.makedirs(exist_ok=True)` so existing data is never touched.
+4. Nested folders - `Examination` and `Health and Safety` each receive 4 sub-folders automatically.
+5. Log closure - a final log entry marks the end of the run.
 
 
 ---
